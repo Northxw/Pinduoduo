@@ -1,4 +1,4 @@
-## 拼多多商品信息爬虫
+# 拼多多商品信息爬虫
 &emsp; 通过拼多多商品API获取商品信息。
 
 ## 项目目录
@@ -14,6 +14,7 @@ pyecharts | pip3 install pyecharts
 wordcloud | pip3 install wordcloud
 cv2 | pip3 install cv2
 jieba | pip3 install jieba
+
 &emsp; 注意：上述安装均在Windows环境下进行时，可能会出现依赖不足而导致安装错误的情况，请自行谷歌解决。
 
 ## 解释说明
