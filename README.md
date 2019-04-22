@@ -63,7 +63,7 @@ yield Request(url=self.search_url + urlencode(data),
 - 2019/4/22 项目部署
 
 ## 项目部署
-&emsp; [待补充]
+&emsp; 已完成scapyd 本地部署。
 
 ## 运行
 &emsp; 命令行切换至项目根目录下，运行命令：
