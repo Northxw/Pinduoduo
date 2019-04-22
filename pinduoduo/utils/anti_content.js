@@ -1,3 +1,9 @@
+"""
+提示：由于侵权问题，没在MD文档写明参考来源。在这里悄悄放出来：https://github.com/SergioJune/Spider-Crack-JS/tree/master/pinduoduo。
+
+Ps: 若这都被某多多发现（侵权）了，麻烦联系邮箱，尽快处理。
+"""
+
 function get_anti(href) {
     function i_i(e, t, r, n) {
         for (var o = 65535 & e | 0, a = e >>> 16 & 65535 | 0, i = 0; 0 !== r; ) {
