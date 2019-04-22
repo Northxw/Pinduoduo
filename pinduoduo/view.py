@@ -87,7 +87,7 @@ def view():
 
 def showcloud():
     # 文本路径
-    text_path = os.path.dirname(os.path.realpath(__file__)) + '\\utils\\wordcloud.txt'
+    text_path = os.path.dirname(os.path.realpath(__file__)) + '\\utils\\pdd.txt'
     if text_path:
         with open(text_path, 'r', encoding='utf-8') as f:
             text = f.read()
