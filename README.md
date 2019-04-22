@@ -2,7 +2,16 @@
 &emsp; 通过拼多多商品API获取商品信息。
 
 ## 项目目录
-&emsp; [待补充]
+```
+├─.idea
+└─pinduoduo
+    ├─images
+    ├─spiders
+    │  └─__pycache__
+    ├─utils
+    ├─view
+    └─__pycache__
+```
 
 ## 环境依赖
 第三方库 | 描述
@@ -13,6 +22,7 @@ xlrd | pip3 install xlrd
 pyecharts | pip3 install pyecharts
 wordcloud | pip3 install wordcloud
 jieba | pip3 install jieba
+
 &emsp; 注意：上述安装均在Windows环境下进行时，可能会出现依赖不足而导致安装错误的情况，请自行谷歌解决。
 
 ## 解释说明
@@ -42,21 +52,21 @@ yield Request(url=self.search_url + urlencode(data),
 ## 数据分析
 &emsp; （本次商品的数据分析仅针对搜索参数iPad）
 
-![price_zone]()
+![price_zone](https://github.com/Northxw/Pinduoduo/blob/master/pinduoduo/view/%E5%90%84%E4%BB%B7%E6%A0%BC%E5%8C%BA%E9%97%B4%E7%9A%84%E5%95%86%E5%93%81%E6%95%B0%E9%87%8F.png)
 
-![tags]()
+![tags](https://github.com/Northxw/Pinduoduo/blob/master/pinduoduo/view/%E5%95%86%E5%AE%B6%E6%A0%87%E7%AD%BE.png)
 
-![wordcloud]()
+[词云](https://github.com/Northxw/Pinduoduo/blob/master/pinduoduo/view/pdd.png)
 
 ## 更新记录
-- 2019/4/21 项目整体架构已完成，可正常获取数据。
-- ...
+- 2019/4/21 项目整体架构完成
+- 2019/4/22 项目部署
 
 ## 项目部署
 &emsp; [待补充]
 
 ## 运行
-&emsp; 命令行：
+&emsp; 命令行切换至项目根目录下，运行命令：
 ```Python
 >>> scrapy crawl pdd
 ```
@@ -68,13 +78,6 @@ yield Request(url=self.search_url + urlencode(data),
 ```Python
 >>> curl http://localhost:6800/schedule.json -d project=pinduoduo -d spider=pdd
 ```
-&emsp; Gerapy 管理，依次执行如下命令：
-```Python
->>> gerapy init
->>> gerapy migrate
->>> gerapy runserver
-```
-&emsp; Gerapy默认在8000端口开启 Gerapy 服务并提供了更加方便的爬虫控制（具体使用方法请自行谷歌）。
 
 ## 公告
 &emsp; (技术无罪) 本代码仅作学习交流，若涉及拼多多侵权，请邮箱联系，将在第一时间处理。
