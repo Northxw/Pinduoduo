@@ -1,4 +1,4 @@
-# 拼多多商品信息爬虫
+## 拼多多商品信息爬虫
 &emsp; 通过拼多多商品API获取商品信息。
 
 ## 项目目录
@@ -12,9 +12,7 @@ execjs | pip3 install execjs
 xlrd | pip3 install xlrd
 pyecharts | pip3 install pyecharts
 wordcloud | pip3 install wordcloud
-cv2 | pip3 install cv2
 jieba | pip3 install jieba
-
 &emsp; 注意：上述安装均在Windows环境下进行时，可能会出现依赖不足而导致安装错误的情况，请自行谷歌解决。
 
 ## 解释说明
@@ -66,6 +64,17 @@ yield Request(url=self.search_url + urlencode(data),
 ```Python
 >>> python main.py
 ```
+&emsp; 或者 scrapyd-client 打包部署到本地服务器，然后运行命令：
+```Python
+>>> curl http://localhost:6800/schedule.json -d project=pinduoduo -d spider=pdd
+```
+&emsp; Gerapy 管理，依次执行如下命令：
+```Python
+>>> gerapy init
+>>> gerapy migrate
+>>> gerapy runserver
+```
+&emsp; Gerapy默认在8000端口开启 Gerapy 服务并提供了更加方便的爬虫控制（具体使用方法请自行谷歌）。
 
 ## 公告
 &emsp; (技术无罪) 本代码仅作学习交流，若涉及拼多多侵权，请邮箱联系，将在第一时间处理。
