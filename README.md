@@ -3,14 +3,34 @@
 
 ## 项目目录
 ```
-├─.idea
+│  .gitignore
+│  README.md
+│  requirements.txt
+│  scrapy.cfg
+│
 └─pinduoduo
+    │  email.py
+    │  items.py
+    │  main.py
+    │  middlewares.py
+    │  pipelines.py
+    │  settings.py
+    │  view.py
+    │  __init__.py
+    │
     ├─images
     ├─spiders
-    │  └─__pycache__
+    │      pdd.py
+    │
     ├─utils
-    ├─view
-    └─__pycache__
+    │      anti_content.js
+    │
+    └─view
+            db.png
+            FZSTK.TTF
+            pdd.png
+            show.jpg
+            ...
 ```
 
 ## 环境依赖
